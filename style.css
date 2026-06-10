@@ -174,3 +174,35 @@ body.dark #mensagemSucesso{
         font-size:1.8rem;
     }
 }
+.assinatura{
+
+    position:fixed;
+
+    left:15px;
+    bottom:15px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    opacity:.12;
+
+    pointer-events:none;
+
+    user-select:none;
+}
+
+footer{
+
+    width:100%;
+
+    text-align:center;
+
+    padding:15px;
+
+    margin-top:40px;
+
+    font-size:14px;
+
+    opacity:.75;
+}
