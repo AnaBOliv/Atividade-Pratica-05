@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+    background:#FEF5E4;
+    color:#3B2326;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    transition:.3s;
+}
+
+body.dark{
+
+    background:#1F1B1C;
+    color:#FCEFD8;
+}
+
+.container{
+
+    width:100%;
+    max-width:500px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 15px rgba(0,0,0,.1);
+}
+
+body.dark .container{
+
+    background:#32282A;
+}
+
+h1{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#9F3E47;
+}
+
+.campo{
+
+    display:flex;
+    flex-direction:column;
+
+    margin-bottom:15px;
+}
+
+label{
+
+    margin-bottom:5px;
+
+    font-weight:600;
+}
+
+input{
+
+    padding:12px;
+
+    border:2px solid #E6D2C2;
+
+    border-radius:8px;
+
+    font-size:16px;
+}
+
+body.dark input{
+
+    background:#4A3A3D;
+    color:white;
+    border:none;
+}
+
+input:focus{
+
+    outline:none;
+
+    border-color:#9F3E47;
+}
+
+button{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    background:#9F3E47;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    opacity:.9;
+}
+
+#temaBtn{
+
+    position:fixed;
+
+    top:15px;
+    left:15px;
+
+    width:55px;
+
+    z-index:100;
+}
+
+.erro{
+
+    color:#D62828;
+
+    min-height:18px;
+
+    margin-top:5px;
+
+    font-size:14px;
+}
+
+#mensagemSucesso{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    color:#2E8B57;
+}
+
+body.dark #mensagemSucesso{
+
+    color:#7CFC98;
+}
+
+@media(max-width:600px){
+
+    .container{
+
+        padding:20px;
+    }
+
+    h1{
+
+        font-size:1.8rem;
+    }
+}
